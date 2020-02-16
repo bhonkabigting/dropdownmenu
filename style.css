@@ -1,0 +1,111 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.menu {
+   background: black;
+   
+}
+
+.menu ul {
+   display:inline-flex;
+   list-style: none;
+   text-align: center;
+}
+
+.menu ul li {
+   height: 51px;
+   width: 150px;
+   padding: 15px;
+   font-size: large;
+}
+
+.menu ul li a {
+   text-decoration: none;
+   color: white;
+}
+
+.menu ul li:hover {
+   background: dimgray;
+
+}
+
+.subMenu1 {
+   display: none;
+}
+
+.menu ul li:hover .subMenu1 {
+   display: block;
+   position: absolute;
+   background-color: lightgrey;
+   left: 300px;
+   top: 51px;
+   
+}
+
+.menu ul li:hover .subMenu1 ul {
+   display: block;
+   
+}
+
+.subMenu1 ul li{
+   padding-left: 55px;
+   padding-right: 240px;
+}
+
+.subMenu1 ul li:hover {
+   background: whitesmoke;
+}
+
+.subMenu1 ul .list:hover #parent{
+   display: inline;
+}
+
+#parent{
+   display: none;
+   color: white;
+   background: black;
+   position: absolute;
+   top: -51px;
+   left: 0px;
+   height: 51px;
+   width: 150px;
+   padding: 15px;
+   font-size: large;
+}
+
+
+.subMenu1 ul li a{
+   color: black;
+}
+
+.subMenu2 {
+   display:none;
+}
+
+
+.subMenu1 ul li:hover .subMenu2 {
+   display: block;
+   position: absolute;
+   top: 102px;
+   left: 295px;
+   background-color: lightgray;
+}
+
+.subMenu3 {
+   display: none;
+}
+
+.subMenu3 ul li{
+   background-color: lightgray;
+}
+
+.subMenu2 ul li:hover .subMenu3{
+   display: block;
+   position: absolute;
+   top: 153px;
+   left: 295px;
+   
+}
